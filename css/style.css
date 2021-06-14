@@ -20,13 +20,30 @@ body {
 
 .flex {
     display: flex;
+    align-items: center;
 }
 
 img {
     width: 100%;
 }
 
-/* main */
+.padding-right {
+    padding-right: 20px;
+}
+
+.padding-bottom {
+    padding-bottom: 10px;
+}
+
+.font-green {
+    color: green;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* header */
 
 #main-header {
     height: 80px;
@@ -51,8 +68,10 @@ img {
 
 #users {
     background-color: black;
+    padding-bottom: 20px;
     height: calc(100vh - 180px);
-    overflow: scroll;
+    overflow-y: scroll;
+    
 }
 
 #users .flex {
@@ -75,3 +94,27 @@ img {
     background-color: rgba(0,0,0,0.5);
 }
 
+/* footer */
+
+
+#main-control {
+    background-color: rgb(34, 34, 34);
+    height: 100px;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+
+.icon .icon-img {
+    font-size: 30px;
+}
+
+.fas.fa-chevron-up {
+    font-size: 12px;
+}
+
+.right-control {
+    background-color: rgb(74, 74, 74);
+    padding: 0 20px;
+    align-self: stretch;
+    color: red;
+}
