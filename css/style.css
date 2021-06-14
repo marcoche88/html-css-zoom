@@ -35,10 +35,6 @@ img {
     padding-bottom: 10px;
 }
 
-.font-green {
-    color: green;
-}
-
 .text-center {
     text-align: center;
 }
@@ -69,7 +65,7 @@ img {
 #users {
     background-color: black;
     padding-bottom: 20px;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 170px);
     overflow-y: scroll;
     
 }
@@ -99,7 +95,7 @@ img {
 
 #main-control {
     background-color: rgb(34, 34, 34);
-    height: 100px;
+    height: 90px;
     padding-left: 10px;
     justify-content: space-between;
 }
@@ -114,7 +110,28 @@ img {
 
 .right-control {
     background-color: rgb(74, 74, 74);
+    color: red;
     padding: 0 20px;
     align-self: stretch;
+}
+
+/* footer hover */
+
+#main-control .mute:hover .icon-img,
+#main-control .stop:hover .icon-img {
     color: red;
+}
+
+#main-control .invite:hover .icon-img,
+#main-control .manage:hover .icon-img,
+#main-control .polling:hover .icon-img,
+#main-control .share:hover .icon-img {
+    color: green;
+}
+
+#main-control .chat:hover .icon-img,
+#main-control .record:hover .icon-img,
+#main-control .rooms:hover .icon-img,
+#main-control .more:hover .icon-img {
+    color: blue;
 }
