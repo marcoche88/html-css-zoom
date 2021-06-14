@@ -8,6 +8,7 @@
 
 body {
     font-family: sans-serif;
+    color: white;
 }
 
 /* utilities */
@@ -21,12 +22,15 @@ body {
     display: flex;
 }
 
+img {
+    width: 100%;
+}
+
 /* main */
 
 #main-header {
     height: 80px;
     background-color: black;
-    color: white;
     padding: 10px;
     justify-content: flex-end;
     align-items: flex-start;
@@ -42,3 +46,32 @@ body {
 #main-header .view {
     margin-right: 10px;
 }
+
+/* main */
+
+#users {
+    background-color: black;
+    height: calc(100vh - 180px);
+    overflow: scroll;
+}
+
+#users .flex {
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#users .user {
+    padding: 1.5px 3px;
+    position: relative;
+}
+
+#users .name-user {
+    position: absolute;
+    bottom: 5px;
+    font-size: 14px;
+    padding: 5px 3px;
+    background-color: rgba(0,0,0,0.5);
+}
+
